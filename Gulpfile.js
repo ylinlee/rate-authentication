@@ -45,7 +45,7 @@ gulp.task('templates', function() {
         .pipe(templateCache({
             root: 'src/' + moduleName + '/template/',
             module: 'rateApp.' + moduleName,
-            standalone: true,
+            standalone: false,
             templateHeader: TEMPLATE_HEADER,
             templateFooter: TEMPLATE_FOOTER
         }))
