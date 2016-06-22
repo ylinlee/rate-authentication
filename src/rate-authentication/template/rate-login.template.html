@@ -1,0 +1,52 @@
+<style>
+#login-wrapper {
+    margin-top: 50px;
+}
+
+.alert {
+    position: absolute;
+    width: calc(100% - 30px);
+}
+
+.animate-if.ng-enter,
+.animate-if.ng-leave {
+    transition: all cubic-bezier(0.250, 0.460, 0.450, 0.940) 0.5s;
+}
+
+.animate-if.ng-enter,
+.animate-if.ng-leave.ng-leave-active {
+    opacity: 0;
+}
+
+.animate-if.ng-leave,
+.animate-if.ng-enter.ng-enter-active {
+    opacity: 1;
+}
+</style>
+<div id="login-wrapper" class="container">
+    <div class="row">
+        <div class="col-md-4 col-md-offset-4">
+            <div class="login-panel panel panel-default">
+                <div class="panel-heading">
+                    <h3 class="panel-title">Por favor loguese</h3>
+                </div>
+                <div class="panel-body">
+                    <form role="form" ng-submit="rateLoginCtrl.login(rateLoginCtrl.credentials)" novalidate>
+                        <fieldset>
+                            <div class="form-group">
+                                <input class="form-control" placeholder="Usuario" name="usuario" type="text" autofocus id="usuario" ng-model="rateLoginCtrl.credentials.username">
+                            </div>
+                            <div class="form-group">
+                                <input class="form-control" placeholder="Password" name="password" type="password" id="password" ng-model="rateLoginCtrl.credentials.password">
+                            </div>
+                            <button type="submit" class="btn btn-lg btn-success btn-block">Login</button>
+                        </fieldset>
+                    </form>
+                </div>
+            </div>
+            <div class="alert alert-danger animate-if" ng-if="rateLoginCtrl.hasError">
+                Error al logarse. {{rateLoginCtrl.message}}
+            </div>
+        </div>
+    </div>
+</div>
