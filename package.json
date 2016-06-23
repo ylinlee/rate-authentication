@@ -1,6 +1,6 @@
 {
   "name": "rate-authentication",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "rate authentication angular module",
   "readme": "README.md",
   "repository": "https://github.com/ylinlee/rate-authentication.git",
