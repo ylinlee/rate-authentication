@@ -1,6 +1,6 @@
 {
   "name": "rate-authentication",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "rate authentication angular module",
   "readme": "README.md",
   "repository": "https://github.com/ylinlee/rate-authentication.git",
@@ -17,6 +17,7 @@
     "gulp": "^3.9.1",
     "gulp-angular-templatecache": "^2.0.0",
     "gulp-concat": "^2.6.0",
+    "gulp-htmlmin": "^2.0.0",
     "gulp-jshint": "^2.0.1",
     "gulp-plumber": "^1.1.0",
     "gulp-rename": "^1.2.2",
